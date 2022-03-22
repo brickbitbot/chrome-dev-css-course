@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codepen.css">
+    <style>
+        .swatch {
+  padding: 0.5rem;
+  border: 1px solid var(--color-stroke);
+}
+
+.swatch__sample {
+  height: 120px;
+  border: 1px solid var(--color-stroke);
+  margin-bottom: 1rem;
+}
+
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size, 12rem), 1fr)
+  );
+  gap: 1rem;
+  padding: 0;
+}
+
+li + li {
+  margin: 0;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+          <article class="flow">
+            <h1>HEX Colors</h1>
+            <ul class="auto-grid" role="list">
+              <li class="swatch">
+                <div class="swatch__sample" style="background: #b71540" aria-hidden="true"></div>
+                <code>#b71540</code>
+              </li>
+      
+              <li class="swatch">
+                <div class="swatch__sample" style="background: #60a3bc" aria-hidden="true"></div>
+                <code>#60a3bc</code>
+              </li>
+      
+              <li class="swatch">
+                <div class="swatch__sample" style="background: #f6b93b" aria-hidden="true"></div>
+                <code>#f6b93b</code>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </main>
+    
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body>div {
+            display: grid;
+            grid-template-columns: max-content 3fr;
+            grid-template-rows: 8vh 1fr 8vh;
+            gap: 1em;
+
+        }
+        header {
+            grid-row: 1 / 2;
+            grid-column: 1 / -1;
+            
+        }
+        header ul {
+            display: flex;
+            align-items: flex-end;
+            list-style: none;
+            gap: 1em;
+        }
+        header li {
+        flex: 0 1 20px;
+        border: 1px solid darkblue;
+        background-color: rgba(0, 0, 255, 0.3);
+        border-radius: 5px;
+        text-align: center;
+        padding-inline: 1em;
+        padding-block: 0.5em;
+        }
+        header li:first-child{
+            margin-inline-end: auto;
+        }
+        
+        aside {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            background-color: bisque;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        aside ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            gap: 1em;
+            /* justify-content: center; */
+            align-content: center; 
+        }
+        aside ul li{
+            border: 1px solid black;
+            flex: 0 0 20px;
+            background-color: rgba(0 0 255 / 0.3);
+            border-radius: 5px;
+            padding-inline: 1em;
+            padding-block: 0.5em;
+            
+        }
+        aside ul li:first-child {
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-block-end: auto;
+            padding-inline: 0.5em;
+            padding-block: 0.25em
+        }
+        main {
+            grid-column: 2 / 3;
+            grid-row:
+        }
+        footer {
+            grid-row: -1 / -2;
+            grid-column: 1 / -1;
+        }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <ul>
+          <li>Logo</li>
+          <li>Home</li>
+          <li>About</li>
+          <li>Pricing</li>
+          <li>Contact</li>
+        </ul>
+      </header>
+      <main>
+        <div>
+          <h1>Lorem, ipsum dolor sit amet</h1>
+          <p>
+            consectetur adipisicing elit. Expedita aspernatur voluptatibus quos
+            asperiores exercitationem alias quas deleniti eum quaerat, commodi
+            iure nostrum reiciendis soluta dolorum ipsa possimus explicabo cum
+            doloribus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            unde, nam sequi aliquam esse earum provident nulla iste sit
+            consequatur assumenda porro officia dolor enim, laboriosam qui
+            fugiat! Nobis, quaerat!
+          </p>
+        </div>
+      </main>
+      <aside>
+        <ul>
+          <li>one</li>
+          <li>one</li>
+          <li>one</li>
+          <li>one</li>
+        </ul>
+      </aside>
+      <footer>
+        <div>example@example.com</div>
+      </footer>
+    </div>
+  </body>
+</html>
